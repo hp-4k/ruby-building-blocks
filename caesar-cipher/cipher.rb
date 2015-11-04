@@ -17,4 +17,5 @@ def caesar_cipher(text, offset)
   new_text
 end
 
-puts caesar_cipher("What a string!", -1)
+puts caesar_cipher("What a string!", 5)
+puts caesar_cipher("Bmfy f xywnsl!", -5)
