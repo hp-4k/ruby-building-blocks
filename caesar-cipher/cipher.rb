@@ -1,5 +1,6 @@
 def caesar_cipher(text, offset)
   new_text = ""
+  offset += 26 while offset < 0
   text.each_char do |character|
     if ('A'..'Z').include?(character) 
       new_char = character.ord + offset
@@ -16,4 +17,4 @@ def caesar_cipher(text, offset)
   new_text
 end
 
-puts caesar_cipher("What a string!", 5)
+puts caesar_cipher("What a string!", -1)
